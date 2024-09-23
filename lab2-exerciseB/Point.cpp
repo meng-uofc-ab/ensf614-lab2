@@ -24,7 +24,7 @@ Point::~Point() {
 }
 
 void Point::display() const {
-    cout << fixed << std::setprecision(2);
+    cout << fixed << setprecision(2);
     cout << "X-coordinate: " << x << endl;
     cout << "Y-coordinate: " << y << endl;
 }

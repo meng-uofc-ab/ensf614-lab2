@@ -15,8 +15,8 @@ private:
     double x;
     double y;
     int id;
-    static int nextId; // Next available id for a new Point object
-    static int count; // Count of current Point objects
+    static int nextId; // Next available id
+    static int count; // Count of Point objects
 
 public:
     Point(double x, double y);
@@ -53,6 +53,7 @@ public:
     
     void display() const;
     //PROMISES: displays x, and y coordinates of the point
+    
     static int counter();
     // PROMISES: returns the number of objects of class Point
 };
