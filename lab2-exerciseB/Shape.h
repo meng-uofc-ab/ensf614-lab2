@@ -30,7 +30,7 @@ public:
     const char* getName() const;
     // PROMISES: returns the pointer to the name of the shape
     
-    void display() const;
+    virtual void display() const;
     //PROMISES: displays name of the shape and x, and y coordinates of the origin point
     
     double distance(Shape& other) const;
