@@ -21,7 +21,7 @@ public:
     // REQUIRES: Double values representing x and y coordinates of the point
     // PROMISES: Creates a Point object with given coordinates and a unique id.
     
-    ~Shape();
+    virtual ~Shape();
     // PROMISES: de-allocates the memory space allocated dynamically for shapeName
     
     const Point& getOrigin() const;
@@ -32,6 +32,9 @@ public:
     
     virtual void display() const;
     //PROMISES: displays name of the shape and x, and y coordinates of the origin point
+    
+    virtual const double area() const = 0;
+    //Pure virtual function to calculate area. Derived class defines the implementation
     
     double distance(Shape& other) const;
     // REQUIRES: reference to another shape
